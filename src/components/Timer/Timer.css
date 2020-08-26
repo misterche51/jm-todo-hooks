@@ -1,0 +1,73 @@
+.timer {
+  border: 1px solid #999;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: gray;
+  min-width: 142px;
+  padding: 4px;
+}
+
+.timer .timer-value {
+  margin-right: auto;
+}
+
+.timer span:hover {
+  cursor: pointer;
+}
+
+.timer.disabled,
+.timer.disabled span {
+  color: gray;
+  cursor: not-allowed;
+  filter: none;
+}
+
+.pause-icon,
+.play-icon,
+.clear-icon {
+  transform: scale(1.1);
+  margin: 4px;
+}
+
+.pause-icon:hover,
+.play-icon:hover,
+.clear-icon:hover {
+  transition: ease-in-out 0.1s;
+  transform: scale(1.25);
+}
+
+.timer.disabled .pause-icon:hover,
+.timer.disabled .play-icon:hover,
+.timer.disabled .clear-icon:hover {
+  transition: none;
+  transform: scale(1.1);
+}
+
+.pause-icon {
+  color: blue;
+}
+
+.play-icon {
+  color: green;
+}
+
+.timer .clear-icon {
+  color: red;
+  margin: 2px;
+  border: 0.5px solid rgb(255, 86, 86);
+}
+
+.timer.disabled .clear-icon {
+  border-color: rgba(0, 0, 0, 0.4);
+  cursor: not-allowed;
+}
+
+.timer .clear-icon:hover {
+  filter: saturate(5) drop-shadow(0 0 4px rgb(255, 0, 0));
+}
+
+.timer.disabled .clear-icon:hover {
+  filter: none;
+}

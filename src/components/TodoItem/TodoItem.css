@@ -1,0 +1,16 @@
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 85px 15px 60px;
+}
+
+.description {
+  word-break: break-all;
+  display: block;
+  line-height: 1.2;
+  transition: color .4s;
+  font-weight: 400;
+  color: #4d4d4d;
+  margin-right: 8px;
+}
